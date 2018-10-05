@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html>
+<head>
+		<style>
+				table {
+					font-family: arial, sans-serif;
+					border-collapse: collapse;
+					width: 100%;
+					background: white;
+				}
+				
+				td, th {
+					border: 1px solid #dddddd;
+					text-align: left;
+					padding: 8px;
+				}
+				
+				tr:nth-child(even) {
+					background-color: #dddddd;
+				}
+				</style>
+	<link rel="stylesheet" href="../../public/css/style.css"/>
+	<script type="text/javascript" src="../../public/css/kodlar.js"></script>
+</script>
+<script>
+	var no;
+	function ahulan(no){
+	if(no=="no0")
+	{
+		document.getElementById(no).style.display="block";
+		document.getElementById("no1").style.display="none";
+		document.getElementById("no2").style.display="none";
+		
+	}
+	if(no=="no1")
+	{
+		document.getElementById(no).style.display="block";
+		document.getElementById("no0").style.display="none";
+		document.getElementById("no2").style.display="none";
+	}
+	if(no=="no2")
+	{
+		document.getElementById(no).style.display="block";
+		document.getElementById("no1").style.display="none";
+		document.getElementById("no0").style.display="none";
+	}
+	}
+</script>
+<meta charset="utf-8">
+<title>Samed Karakuş</title>
+</head>
+<body>
+<div class="naberula">
+
+
+		<div class="menum">
+			<input id="Anasayfa" onclick="ahulan('no0')" type="button" class="hellonigga" value="Anasayfa Ayarları"/>
+			<input id="bloglar" onclick="ahulan('no1')" type="button" class="hellonigga" value="Blog Yazıları"/>
+			<input id="yaziekle" onclick="ahulan('no2')" type="button" class="hellonigga" value="Blog Yazısı Ekle"/>
+			<input id="yaziekle" onclick="window.location.href='/login'" type="button" class="hellonigga" value="Çıkış Yap"/>
+			
+		</div>
+		<div style="margin: auto;" class="icerikcik" id="no0">
+			<form action="/guncelle" method="POST" id="Anasayfa"><br>
+			<input type="text" class="guncel1" placeholder="Benim Hakkımda" name="hakkimda" value="<%=yaz1%>" /><br>
+			<input type="text" class="guncel1" placeholder="Neler İle Uğraşıyorum Açıklama" value="<%=yaz2%>" name="ugras"/><br>
+			<input type="text" class="guncel1" placeholder="Uğraştığım 1" value="<%=yaz3%>" name="ugras1"/><br>
+			<input type="text" class="guncel1" placeholder="Uğraştığım 2" value="<%=yaz4%>" name="ugras2"/><br>
+			<input type="text" class="guncel1" placeholder="Uğraştığım 3" value="<%=yaz5%>" name="ugras3"/><br>
+			<input type="text" class="guncel1" placeholder="Uğraştığım 4" value="<%=yaz6%>" name="ugras4"/><br>
+			<input type="text" class="guncel1" placeholder="Uğraştığım 5" value="<%=yaz7%>" name="ugras5"/><br>
+			<input type="text" class="guncel1" placeholder="Uğraştığım 6" value="<%=yaz8%>" name="ugras6"/><br>
+			<input type="text" class="guncel1" placeholder="Footer Yazısı" value="<%=yaz9%>" name="footeryazi"/><br>
+			<input type="submit" value="GÜNCELLE" class="guncelbuton"/>
+			</form>
+		</div> 
+		<div style="margin: auto;display: none" class="icerikcik" id="no1">
+				<br>
+					<center>
+						  <table>
+								<tr>
+								  <th>İŞLEM</th>
+								  <th>BAŞLIK</th>
+								  <th>İÇERİK</th>
+								  <th>RESİM</th>
+								</tr>
+							<%if(naberla != null ) {%>
+								<% for(var i = 0;i<=naber-1;i++){ %> 
+								<tr>
+										<form action="/sil" method="POST" id="blogyazilari"> 
+									<td><input type="submit" class="silbuton" value="SİL"/></td> 
+								  <td><%=naberla[i]['baslik']%></td>
+								  <td><%=naberla[i]['icerik']%></td>
+								  <td><%=naberla[i]['resim']%></td>
+								  <input style="display: none;" value="<%=naberla[i]['blog_id']%>" name="idsi" />
+								</form>
+								</tr>	
+								<% } %>
+							<%}%>
+							
+							  </table>
+							</center>>
+				
+			</div>
+	<div style="margin: auto;display: none" class="icerikcik" id="no2">
+				<form action="/ekle" method="POST" id="blogyaziekle"><br>
+				<input type="text" class="guncel1" placeholder="Balşık"  name="baslik"/><br>
+				<input type="text" class="guncel1" placeholder="İçerik"  name="icerik"/><br>
+				<input type="text" disabled='true' class="guncel1" placeholder="Resim Linki ( Devre Dışı )"  name="resim"/><br>
+				<input type="submit" value="EKLE" class="guncelbuton"/>
+				</form>
+			</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="../../public/css/style.css"/>
+	<script type="text/javascript" src="../../public/css/kodlar.js"></script>
+<meta charset="utf-8">
+<title>Samed Karakuş</title>
+</head>
+<body>
+<div class="dis" id="dis">
+	<!-- Menü Başlıyorum -->
+<div class="menu">
+		<img height="50px" id="logom" onClick="window.location.href='/'" class="logom" src="../../public/img/logocu.png" />
+		<input type="button" class="menubuton" style="color:white;" onClick="window.location.href='login'" value="GİRİŞ YAP"/>
+		<input type="button" class="menubuton" style="color:white;" onClick="window.location.href='/'" value="Anasayfa"/>
+</div>>
+<!-- Menüm bitti --><br>
+
+<center><a class="baslik">MAKALELER</a></center>
+<br>
+<center>
+<marquee behavior=alternate style="color:white;width:500px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Sitemizde Toplam <a style="font-weight: 900;"><%=uzunluk%></a> Makale Bulunmaktadır.</marquee>
+</center>
+<!-- BLOG YAZISIIIIIIIIIIIIIII-->
+<%for(var a=0;a<=uzunluk-1;a++){%>
+<div class="blogyazi">
+<div class="blogresmi">
+	<img src="../../public/img/blogyazi.jpg" height="100%" width="100%"/>
+</div>
+<div class="blogmetin">
+<a class="baslik"><%=veriler[a]['baslik']%></a>
+	<br>
+<a class="blogum"><%=veriler[a]['icerik']%></a>
+	<br>
+	<input style="float: right;border-color: white;color:white;" onclick="alert('Bu bölüm devre dışıdır.');" class="menubuton" value="DEVAMINI OKU" type="button"/>
+</div>
+</div>
+<%}%>
+
+</div>
+</body>
+</html>

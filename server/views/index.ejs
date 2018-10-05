@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="../../public/css/style.css"/>
+<script type="text/javascript" src="../../public/css/kodlar.js"></script>
+<meta charset="utf-8">
+<title>Samed Karakuş</title>
+</head>
+<body>
+<div class="dis" id="dis">
+	<!-- Menü Başlıyorum -->
+<div class="menu">
+	
+<img height="50px" id="logom" onClick="window.location.href='/'" class="logom" src="../../public/img/logocu.png" />
+<input type="button" class="menubuton" style="color:white;" onClick="window.location.href='login'" value="GİRİŞ YAP"/>
+<input type="button" class="menubuton" onClick="window.location.href='#iletisim'" value="İLETİŞİM"/>
+<input type="button" class="menubuton" onClick="window.location.href='#ugras'" value="PROJELERİM"/>
+<input type="button" class="menubuton" onClick="window.location.href='blog'" value="BLOG"/>
+
+</div>
+
+	<!-- Menüm bitti -->
+	<!-- Orta ikili kutunun dışı-->
+	<div class="ortakutu" style="padding-left: 105px" id="ortakutu">
+	<div class="solkutu">
+	<a class="baslik">Ben Kimim?</a><br>
+		<a class="baslik">SAMED KARAKUŞ</a><br>
+		<a class="icerik"><%=samed1%></a>
+	</div>
+	<div class="sagkutu">
+	<img class="resim" id="resim" src="../../public/img/astronotsamet.png" />
+	</div>
+	</div>
+	<!-- Orta Kutunun Bitiş Yeri -->
+	<div class="ugras" id="ugras">
+<center><a class="baslik">Neler İle Uğraşıyorum?</a><br><br>
+
+<a class="icerik"><%=samed2%></a><br><br>
+
+<br>
+	
+	</center>
+
+	<div class="kutu1" style="float:left;" >
+	<img src="../../public/img/icon_1.png" /><br>
+		<a class="baslik">YAPAY ZEKA</a>
+		<br><br>
+	<a class="icerik2"><%=samed3%></a>
+	</div>
+	
+	<div class="kutu1" style="float:left;">
+	<img src="../../public/img/icon_2.png" /><br>
+		<a class="baslik">YAZILIM</a>
+		<br><br>
+	<a class="icerik2"><%=samed4%></a>
+	</div>
+	
+	<div class="kutu1" style="float:left;">
+	<img src="../../public/img/icon_3.png" /><br>
+		<a class="baslik">VIRTUAL REALITY</a>
+		<br><br>
+	<a class="icerik2"><%=samed5%></a>
+	</div><br>
+<div class="kutu1" style="float:left;margin-top: 10px;" >
+	<img src="../../public/img/icon_6.png" /><br>
+		<a class="baslik">WEBMASTER</a>
+		<br><br>
+	<a class="icerik2"><%=samed6%></a>
+	</div>
+	
+	<div class="kutu1" style="float:left;margin-top: 10px;">
+	<img height="60px" src="../../public/img/softesla.png" /><br>
+		<a class="baslik">SOFTESLA</a>
+		<br><br>
+	<a class="icerik2"><%=samed7%></a>
+	</div>
+	
+	<div class="kutu1" style="float:left;margin-top: 10px;">
+	<img src="../../public/img/icon_4.png" /><br>
+		<a class="baslik">GAMING TO</a>
+		<br><br>
+	<a class="icerik2"><%=samed8%></a>
+	</div>
+	</div>
+	<div class="iletisim" id="iletisim">
+	<center><a class="baslik">BENİMLE İLETİŞİME GEÇ</a>
+		
+		<br>
+<a class="icerik2">Benimle iletişime geçmek için aşağıdaki formu doldurup gönder butonuna basınız.<br>
+ karakusnavy@gmail.com</a><br>
+<br>
+<input type="text" class="giris" placeholder="Adınız Soyadınız" />
+		<input type="text" class="giris" placeholder="Mail Adresiniz" />
+		<input type="text" class="giris" placeholder="Telefon Numaranız"  /><br>
+
+
+<input type="text" class="mesaj" placeholder="Mesajınız" /><br>
+<input type="button" class="gonder" onclick="alert('İletişim Sistemi Devre Dışıdır.');" value="GÖNDER">
+		</center>
+	
+	</div>
+	<br>
+	<center>
+	<a style="color:darkgray;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><%=samed9%></a>
+	</center>	
+</div>
+</body>
+</html>

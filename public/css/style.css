@@ -1,0 +1,394 @@
+@charset "utf-8";
+/* CSS Document */
+
+.guncelbuton
+{
+	margin: auto;
+    text-align: center;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    height: 35px;
+    width: 200px;
+    border-radius: 3px;
+    font-weight: 600;
+    background: no-repeat;
+	color: white;
+	cursor: pointer;
+    border: 1px solid #7E7E7E;
+    transition: 0.5s;
+float: right;
+margin-right: 30px;
+}
+.guncelbuton:hover{
+	box-shadow: 0px 0px 5px 1px aqua;
+}
+
+.guncel1
+{
+	background: repeat;
+    color: white;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    height: 30px;
+	width: 700px;
+	margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px dashed #515151;
+}
+
+.hellonigga{
+	width: 90%;
+	height: 60px;
+	border: 0px;
+	margin-top: 18px;
+	margin-left:16px;
+	background: brown;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+	font-variant: 900px;
+	transition: 0.5s;
+	border-radius: 50px;
+}
+.hellonigga:hover
+{
+	background: white;
+	color:black;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.hellonigga:focus{
+	color: black;
+	text-shadow: 0px 0px 10px black;
+	font-size: 20px;
+	box-shadow: 0px 0px 5px 1px black;
+	transition: 0.5s;
+}
+.naberula
+{
+	width: 1000px;
+	margin: auto;
+	margin-top: 5%;
+	height: 480px;
+	box-shadow: 0px 0px 1111px 1px black;
+}
+.menum
+{
+	height: 100%;
+	width: 25%;
+	float: left;
+	border-radius:10px;
+}
+.icerikcik
+{
+	height: 100%;
+	width: 75%;
+	float: left;
+}
+
+
+.loginbutton
+{
+	border:0px;
+	height: 50px;
+	width: 340px;
+	border-radius: 20px;
+	margin-top: 15px;
+	background: teal;
+	color:black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	cursor: pointer;
+	transition:0.7s;
+}
+
+.loginbutton:hover{
+
+	transition:0.7s;
+	background: black;
+	color:white;
+
+}
+
+.sametello
+{
+	margin: auto;
+}
+
+.logininput
+{
+	background: thistle;
+	border: 0px;
+	height: 50px;
+	width: 330px;
+	color: black;
+	padding-left:10px; 
+	margin-top: 15px;
+	border-radius: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	transition: 0.5s;
+}
+.logininput:focus
+{
+	margin-left: 10px;
+	transition: 0.5s;
+}
+.panel
+{
+	margin: auto;
+	background: rgb(231, 224, 224);
+	width: 800px;
+	height: 490px;
+	margin-top: 7%;
+	border-radius:10px;
+	box-shadow: 0px 0px 15px 3px #100000;
+	text-shadow: 0px 0px 5px black;
+	
+}
+.resimli{
+	width: 50%;
+	height: 100%;
+	float: left;
+	margin: auto;
+}
+.login{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.blogyazi{
+	margin: auto;
+	margin-top: 30px;
+	height: 160px;
+	border-radius: 5px;
+	width: 700px;
+	padding: 20px;
+	border: 2px solid #C5C5C5;
+
+}
+.blogresmi{
+	height: 100%;
+	width: 200px;
+	float: left;
+	border: 2px solid white;
+}
+.blogyazi:hover
+{
+	box-shadow: 0px 0px 20px 1px lightblue;
+	cursor: default;
+	text-shadow: 0px 0px 55px black;
+}
+.blogmetin{
+	height: 100%;
+	padding-left: 15px;
+	width: 475px;
+	float: left;
+}
+.blogum{
+	color:white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+body{
+	background-image: url(../img/background.jpg);
+	background-position:top center; 
+	background-repeat:no-repeat; 
+	-webkit-background-size:cover; 
+	-moz-background-size:cover; 
+	-o-background-size:cover; 
+	background-size:cover;
+}
+.dis{
+	margin: auto;
+	width: 83%;
+}
+.menu{
+	width: 950px;
+	height: 50px;
+	margin : 0px auto;
+	vertical-align:middle;
+	
+	
+}
+.logom{
+	margin-top: 5px;
+}
+.menubuton{
+	float: right;
+	margin:auto;
+	text-align: center;
+	border: 0px;
+	margin-right: 10px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	height: 35px;
+	width: 125px;
+	margin-top: 10px;
+	border-radius: 3px;
+	font-weight: 600;
+	background: no-repeat;
+	color: #7E7E7E;
+	border: 1px solid #7E7E7E;
+	transition: 0.5s;
+}
+.menubuton:hover{
+	box-shadow: 0px 0px 16px 1px #57CDFF;
+	text-shadow: 0px 0px 16px #57CDFF;
+	transition: 0.2s;
+	color: white;
+	border: 1px solid white;
+	cursor: pointer;
+}
+.menubuton:active{
+	background:#6FBFEF;
+	color: black;
+}
+.ortakutu
+{
+	height: 400px;
+	width: 950px;
+	margin : 0px auto;
+	vertical-align:middle;
+	margin-top: 50px;
+}
+.solkutu{
+	width: 420px;
+	float: left;
+	padding-top: 100px;
+	word-break: break-all;
+}
+.sagkutu{
+	text-align: center;
+	width: 470px;
+	float: left;
+}
+.icerik{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: white;
+	float: left;
+}
+.icerik2{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: #BBBBBB;
+    
+}
+.baslik{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: white;
+	font-weight: 600;
+	font-size: 28px;
+}
+.resim{
+	margin-left: 31px;
+	transition: 2s;
+}
+.resim:hover
+{
+		margin-right: 100px;
+	transition: 2s;
+
+}
+.ugras{
+	word-break: break-all;
+	height: 400px;
+	width: 825px;
+	margin : 0px auto;
+	vertical-align:middle;
+}
+.kutu1{
+	height: 270px;
+	width: 228px;
+	text-align: center;
+	border: 1px solid #4D4D4D;
+	padding: 10px;
+	margin-right: 25px;
+	vertical-align: middle;
+	border-radius: 15px;
+}
+.kutu1:hover
+{
+box-shadow: 0px 0px 10px 1px #57FFFF;	
+	border-radius: 15px;
+	border-left-color: white;
+	border-color: white;
+	cursor: default;
+}
+.kutu1:hover img
+{
+	margin-top: 10px;
+	transition: 0.6s;
+}
+.kutu1 img
+{
+	transition: 0.6s;
+}
+.giris{
+	background: repeat;
+	color:white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	height: 30px;
+	width: 200px;
+	margin-left: 5px;
+	padding: 5px;
+	border: 1px dashed #515151;
+	
+}
+
+.silbuton
+{
+	border:0px;
+	border: solid 1px black;
+	color: black;
+	cursor: pointer;
+}
+.silbuton:hover{
+	background: black;
+	color: white;
+	border: solid 1px tomato;
+}
+
+.mesaj{
+	background: repeat;
+	color:white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	height: 160px;
+	width: 640px;
+	margin-top: 15px;
+	padding: 5px;
+	border: 1px dashed #515151;
+}
+.giris:focus{
+	box-shadow: 0px 0px 16px 1px #57CDFF;
+}
+.mesaj:focus{
+	box-shadow: 0px 0px 16px 1px #57CDFF;
+}
+.gonder{
+	margin:auto;
+	text-align: center;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	height: 35px;
+	width: 640px;
+	margin-top: 10px;
+	border-radius: 3px;
+	font-weight: 600;
+	background: no-repeat;
+	color: #7E7E7E;
+	border: 1px solid #7E7E7E;
+	transition: 0.5s;
+	margin-top: 20px;
+}
+.gonder:hover
+{
+	box-shadow: 0px 0px 16px 1px #57CDFF;
+	text-shadow: 0px 0px 16px #57CDFF;
+	transition: 0.2s;
+	color: white;
+	border: 1px solid white;
+	cursor: pointer;
+}
+.iletisim{
+	margin-top: 400px;
+}
